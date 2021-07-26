@@ -1,0 +1,26 @@
+<html>
+<head>
+<h1 style="color:blue";><u><i>Changing Image On Mouse Click Using JavaScript</i></u></h1>
+<img id="example" onclick="changeImage()" src="img/car2.jpg" width="400px" height="400px">
+
+<script>
+
+function changeImage()
+{
+element=document.getElementById('example')
+if (element.src.match("img/car1"))
+  {
+   element.src="img/car2.jpg";
+  }
+else
+  {
+   element.src="img/car1.jpg";
+  }
+}
+
+</script>
+
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+<head>
+<h2 align="center">Heart</h2>
+  <style>
+  div.heart
+  {
+    display: block;
+	margin: 100px;
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	position: relatives;
+	transform: rotateZ(-45deg);
+  }
+  
+  div.heart:after,div.heart:before
+  {
+    display:block;
+	content:'';
+	width:100px;
+	height:100px;
+	background-color:red;
+	border-radius:50px;
+	position:absolute;
+  }
+  div.heart:after
+  {
+    top:-50px;
+	left:0px;
+  }
+  div.heart:before
+  {
+  top:0px;
+  left:50px;
+  }
+  </style>
+</head>
+<body bgcolor="blue">
+ <center>
+   <div class="heart">
+   </div>
+ </center>  
+</body>
+</html>
